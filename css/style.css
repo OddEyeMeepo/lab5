@@ -1,0 +1,120 @@
+#banner {
+    max-height: 40vh;
+    min-width: 100vh;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+#body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+#header {
+    padding: 10px;
+    text-align: left;
+    background: hsl(168, 76%, 42%);
+    color: white;
+    font-size: 20px;
+}
+
+img {
+    max-height: 40vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+a:link,
+a:visited,
+a:after,
+a:before {
+    text-decoration: none;
+}
+
+#content {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1em;
+}
+
+h1 {
+    font-size: 3em;
+    padding-bottom: 0.5em;
+}
+
+#course_name {
+    padding: 0.5em;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: rgb(241, 241, 241);
+    text-align: right;
+}
+
+#add {
+    border-radius: 25%;
+    border: 1px solid hsl(168, 76%, 42%);
+    padding: 0.5em;
+    background-color: hsl(168, 76%, 42%);
+    color: white;
+}
+
+.course_box {
+    padding-left: 0.2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 0.2em;
+    border-radius: 0.25em;
+    border: 1px solid #d98e41;
+    background-color: #d98e41;
+    margin: 0.2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 25vh;
+}
+
+#course_list .item {}
+
+#course_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#course_list input {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+input[type='submit'] {
+    padding: 0.5em;
+    background-color: #73dc8d;
+    border: 1px solid #73dc8d;
+    border-radius: 0.3em;
+    color: white;
+}
+
+#course_list input[type='submit'] {
+    padding: 0.5em;
+    background-color: #e05561;
+    border: 1px solid #e05561;
+    border-radius: 0.3em;
+    color: white;
+}
+
+.checked {
+    border: 1px solid hsl(168, 76%, 42%);
+    background-color: hsla(168, 76%, 42%, 70%);
+}
+
+@media only screen and (max-width: 700px) {
+    .course_box {
+        flex-basis: 100%;
+        width: 100%;
+    }
+}
